@@ -17,16 +17,16 @@ public  struct WordGetter {
         print("Hello Today")
         contents = ["Hello"]
         
-        let bundle = Bundle.module
+        //let settingsURL = Bundle.module.url(forResource: "settings", withExtension: "plist")
+       // let url = Bundle.module.url(forResource: "settings", withExtension: "plist")
 
-        let txtFilePath = bundle.pathForResource("WordCatalogue/autumn-one", ofType: nil)
+        let url = Bundle.module.url(forResource: "autumn-one", withExtension: "txt")
+        print(url ?? "Unkown")
         
-        
-        print(txtFilePath)
-        
-        if let startWordsURL = Bundle.main.url(forResource: "WordCatalogue/autumn-one", withExtension: "txt") {
+        if let startWordsURL = Bundle.module.url(forResource: "autumn-one", withExtension: "txt") {
             if let startWords = try? String(contentsOf: startWordsURL) {
                 contents = startWords.components(separatedBy: "\n")
+                print("😃")
             }
         }
         
