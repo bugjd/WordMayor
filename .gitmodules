@@ -1,9 +1,3 @@
-[submodule "Sources/Sources/WordCatalogue"]
-	path = Sources/Sources/WordCatalogue
-	url = https://github.com/bugjd/WordCatalogue
-[submodule "Sources/WordListFork"]
-	path = Sources/WordListFork
-	url = https://github.com/bugjd/wordlists
 [submodule "Sources/Recources/WordCatalogue"]
 	path = Sources/Recources/WordCatalogue
 	url = https://github.com/bugjd/WordCatalogue
