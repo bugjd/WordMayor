@@ -1,0 +1,12 @@
+skiing
+biathlon
+bobsleigh
+hockey
+luge
+snowboarding
+skeleton
+fishing
+curling
+skating
+bowling
+snowmobile
