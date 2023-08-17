@@ -77,7 +77,7 @@ public struct ChallengeList : Identifiable {
         self.minPoint = minPoint
         self.wordSection = wordSection
         self.repository = Repository.selectRepoByID(id: repositoryID)
-        self.words = ["WordGetter"]
+        self.words = WordGetter.getWords(fileLocation: wordLocation)
     }
     
     
