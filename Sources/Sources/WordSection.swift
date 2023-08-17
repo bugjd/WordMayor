@@ -8,6 +8,8 @@
 import Foundation
 import SwiftUI
 
+
+
 public enum WordSection {
     case unsectioned
     case winterSeason
