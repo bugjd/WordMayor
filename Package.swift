@@ -25,7 +25,8 @@ let package = Package(
         .target(
             name: "WordMayor",
             dependencies: [], path: "Sources", resources: [
-                .process("Recources")]),
+                .process("Recources")]
+        ),
 //        .target(
 //                name: "Resources",
 //                dependencies: [],
