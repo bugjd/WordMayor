@@ -1,0 +1,3 @@
+[submodule "Sources/Sources/WordCatalogue"]
+	path = Sources/Sources/WordCatalogue
+	url = https://github.com/bugjd/WordCatalogue
