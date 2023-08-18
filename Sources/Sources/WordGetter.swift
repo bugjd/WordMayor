@@ -79,8 +79,6 @@ public struct ChallengeList : Identifiable {
         self.repository = Repository.selectRepoByID(id: repositoryID)
         self.words = WordGetter.getWords(fileLocation: wordLocation)
     }
-    
-    
     public static var readyMadeChallanges : [ChallengeList] {
         return [ChallengeList(id: 0, challangeName: "🍁Autumn Selection🍁",
                               preferedGridSize: 8,
