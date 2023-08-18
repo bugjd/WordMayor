@@ -137,13 +137,37 @@ public struct ChallengeList : Identifiable {
                                       wordSection:
                                 WordSection.summerSeason, repositoryID: 0, wordLocation: "summer-other"),
                 ChallengeList(id: 7, challangeName: "Sports Selection 1",
-                                      preferedGridSize: 15,
+                                      preferedGridSize: 10,
                                       maxTime: 150,
                                       minTime: 10,
                                       maxPoint: 150,
                                       minPoint: 10,
                                       wordSection:
-                                WordSection.summerSeason, repositoryID: 0, wordLocation: "summer-sports-one")]
+                                WordSection.summerSeason, repositoryID: 0, wordLocation: "summer-sports-one"),
+                ChallengeList(id: 8, challangeName: "Sports Selection 2",
+                                      preferedGridSize: 10,
+                                      maxTime: 150,
+                                      minTime: 10,
+                                      maxPoint: 150,
+                                      minPoint: 10,
+                                      wordSection:
+                                WordSection.summerSeason, repositoryID: 0, wordLocation: "summer-sports-two"),
+                ChallengeList(id: 9, challangeName: "Winter Selection",
+                                      preferedGridSize: 10,
+                                      maxTime: 150,
+                                      minTime: 10,
+                                      maxPoint: 150,
+                                      minPoint: 10,
+                                      wordSection:
+                                WordSection.winterSeason, repositoryID: 0, wordLocation: "winter-other"),
+                ChallengeList(id: 9, challangeName: "Winter Sports",
+                                      preferedGridSize: 7,
+                                      maxTime: 150,
+                                      minTime: 10,
+                                      maxPoint: 150,
+                                      minPoint: 10,
+                                      wordSection:
+                                WordSection.winterSeason, repositoryID: 0, wordLocation: "winter-sports")]
     }
     // This will only be avaible inside the package. Outside can provide array though!
 }
