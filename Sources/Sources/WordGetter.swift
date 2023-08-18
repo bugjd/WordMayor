@@ -80,7 +80,7 @@ public struct ChallengeList : Identifiable {
         self.words = WordGetter.getWords(fileLocation: wordLocation)
     }
     public static var readyMadeChallanges : [ChallengeList] {
-        return [ChallengeList(id: 0, challangeName: "🍁Autumn Selection🍁",
+        return [ChallengeList(id: 0, challangeName: "Autumn Selection",
                               preferedGridSize: 8,
                               maxTime: 120,
                               minTime: 40,
@@ -88,7 +88,7 @@ public struct ChallengeList : Identifiable {
                               minPoint: 30,
                               wordSection:
                                 WordSection.autumnSeason, repositoryID: 0, wordLocation: "autumn-one"),
-                ChallengeList(id: 1, challangeName: "⏰Fall Back⏰",
+                ChallengeList(id: 1, challangeName: "Fall Back",
                                       preferedGridSize: 6,
                                       maxTime: 70,
                                       minTime: 30,
@@ -96,7 +96,7 @@ public struct ChallengeList : Identifiable {
                                       minPoint: 20,
                                       wordSection:
                                 WordSection.autumnSeason, repositoryID: 0, wordLocation: "autumn-other"),
-                ChallengeList(id: 2, challangeName: "🔔Jingle Bells🔔",
+                ChallengeList(id: 2, challangeName: "Jingle Bells",
                                       preferedGridSize: 6,
                                       maxTime: 120,
                                       minTime: 25,
@@ -104,7 +104,7 @@ public struct ChallengeList : Identifiable {
                                       minPoint: 25,
                                       wordSection:
                                         WordSection.winterSeason, repositoryID: 0, wordLocation: "christmas"),
-                ChallengeList(id: 3, challangeName: "🐰Easter🥚",
+                ChallengeList(id: 3, challangeName: "Easter",
                                       preferedGridSize: 6,
                                       maxTime: 120,
                                       minTime: 25,
@@ -112,14 +112,22 @@ public struct ChallengeList : Identifiable {
                                       minPoint: 25,
                                       wordSection:
                                 WordSection.springSeason, repositoryID: 0, wordLocation: "easter"),
-                ChallengeList(id: 4, challangeName: "🎇Happy New Year!🎆",
+                ChallengeList(id: 4, challangeName: "Happy New Year!",
                                       preferedGridSize: 5,
                                       maxTime: 80,
                                       minTime: 25,
                                       maxPoint: 100,
                                       minPoint: 25,
                                       wordSection:
-                                WordSection.winterSeason, repositoryID: 0, wordLocation: "new-year")]
+                                WordSection.winterSeason, repositoryID: 0, wordLocation: "new-year"),
+                ChallengeList(id: 5, challangeName: "Spring Time",
+                                      preferedGridSize: 7,
+                                      maxTime: 90,
+                                      minTime: 30,
+                                      maxPoint: 90,
+                                      minPoint: 25,
+                                      wordSection:
+                                WordSection.springSeason, repositoryID: 0, wordLocation: "spring-other")]
     }
     // This will only be avaible inside the package. Outside can provide array though!
 }
@@ -136,8 +144,21 @@ internal  struct WordGetter {
         
        
         contents = contents.filter { $0.count >= 1 }
-           return contents
+        return contents.removingDuplicates()
         
     }
     
+}
+extension Array where Element: Hashable {
+    func removingDuplicates() -> [Element] {
+        var addedDict = [Element: Bool]()
+
+        return filter {
+            addedDict.updateValue(true, forKey: $0) == nil
+        }
+    }
+
+    mutating func removeDuplicates() {
+        self = self.removingDuplicates()
+    }
 }
