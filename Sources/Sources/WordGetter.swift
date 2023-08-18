@@ -127,7 +127,23 @@ public struct ChallengeList : Identifiable {
                                       maxPoint: 90,
                                       minPoint: 25,
                                       wordSection:
-                                WordSection.springSeason, repositoryID: 0, wordLocation: "spring-other")]
+                                WordSection.springSeason, repositoryID: 0, wordLocation: "spring-other"),
+                ChallengeList(id: 6, challangeName: "Summertime",
+                                      preferedGridSize: 9,
+                                      maxTime: 100,
+                                      minTime: 10,
+                                      maxPoint: 100,
+                                      minPoint: 10,
+                                      wordSection:
+                                WordSection.summerSeason, repositoryID: 0, wordLocation: "summer-other"),
+                ChallengeList(id: 7, challangeName: "Sports Selection 1",
+                                      preferedGridSize: 15,
+                                      maxTime: 150,
+                                      minTime: 10,
+                                      maxPoint: 150,
+                                      minPoint: 10,
+                                      wordSection:
+                                WordSection.summerSeason, repositoryID: 0, wordLocation: "summer-sports-one")]
     }
     // This will only be avaible inside the package. Outside can provide array though!
 }
