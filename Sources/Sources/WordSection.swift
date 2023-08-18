@@ -17,7 +17,7 @@ public enum WordSection {
     case autumnSeason
     case summerSeason
     
-    static func getSectionLabel(section : WordSection) -> Label<Text, Image>?  {
+    public static func getSectionLabel(section : WordSection) -> Label<Text, Image>?  {
         switch(section) {
         case.winterSeason:
             return Label("Winter", systemImage: "snowflake")
