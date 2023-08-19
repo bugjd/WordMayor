@@ -160,7 +160,7 @@ public struct ChallengeList : Identifiable {
                                       minPoint: 10,
                                       wordSection:
                                 WordSection.winterSeason, repositoryID: 0, wordLocation: "winter-other"),
-                ChallengeList(id: 9, challangeName: "Winter Sports",
+                ChallengeList(id: 10, challangeName: "Winter Sports",
                                       preferedGridSize: 7,
                                       maxTime: 150,
                                       minTime: 10,
