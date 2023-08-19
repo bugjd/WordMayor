@@ -7,10 +7,10 @@ This project was designed under the MIT License and I have desgined by package t
 The Package has been designed to also handle user generated ChallangeLists but dooes not handle the storage of such a list.
 
 ## Git Submodules used in the Project
-    1. [WordCatalogue](https://github.com/bugjd/WordCatalogue) by [bugjd](https://github.com/bugjd). [Released under the MIT License](https://github.com/bugjd/WordCatalogue/blob/main/LICENSE.md)
-    2. [bugjd's fork of](https://github.com/bugjd/wordlists) [imsky/wordlists](https://github.com/imsky/wordlists) by [imsky](https://github.com/imsky)
+1. [WordCatalogue](https://github.com/bugjd/WordCatalogue) by [bugjd](https://github.com/bugjd). [Released under the MIT License](https://github.com/bugjd/WordCatalogue/blob/main/LICENSE.md)
+2. [bugjd's fork of](https://github.com/bugjd/wordlists) [imsky/wordlists](https://github.com/imsky/wordlists) by [imsky](https://github.com/imsky)
 
 ## Future Plans for WordMayor
-    1. Implementing a more efficient way to store the files
-    2. All developers to provide their own .txt files without forking the package.
-    3. Providing better documentation
+1. Implementing a more efficient way to store the files
+2. All developers to provide their own .txt files without forking the package.
+3. Providing better documentation
