@@ -18,6 +18,7 @@ internal  struct WordGetter {
         
        
         contents = contents.filter { $0.count >= 1 }
+        contents = contents.map { $0.trimmingCharacters(in: .whitespaces) }
         return contents.removingDuplicates()
         
     }
