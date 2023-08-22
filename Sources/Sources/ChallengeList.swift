@@ -94,13 +94,14 @@ public struct ChallengeList : Identifiable {
                                       wordSection:
                                 WordSection.springSeason, repositoryID: 0, wordLocation: "spring-other"),
                 ChallengeList(id: 6, challangeName: "Summertime",
-                                      preferedGridSize: 9,
+                                      preferedGridSize: 15,
                                       maxTime: 100,
                                       minTime: 10,
                                       maxPoint: 100,
                                       minPoint: 10,
                                       wordSection:
                                 WordSection.summerSeason, repositoryID: 0, wordLocation: "summer-other"),
+                
                 ChallengeList(id: 7, challangeName: "Sports Selection 1",
                                       preferedGridSize: 10,
                                       maxTime: 150,
