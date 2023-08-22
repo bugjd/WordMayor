@@ -94,7 +94,7 @@ public struct ChallengeList : Identifiable {
                                       wordSection:
                                 WordSection.springSeason, repositoryID: 0, wordLocation: "spring-other"),
                 ChallengeList(id: 6, challangeName: "Summertime",
-                                      preferedGridSize: 15,
+                                      preferedGridSize: 8,
                                       maxTime: 100,
                                       minTime: 10,
                                       maxPoint: 100,
