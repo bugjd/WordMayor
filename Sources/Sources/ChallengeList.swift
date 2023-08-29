@@ -78,7 +78,7 @@ public struct ChallengeList : Identifiable {
                                       wordSection:
                                 WordSection.springSeason, repositoryID: 0, wordLocation: "easter"),
                 ChallengeList(id: 4, challangeName: "Happy New Year!",
-                                      preferedGridSize: 5,
+                                      preferedGridSize: 8,
                                       maxTime: 80,
                                       minTime: 25,
                                       maxPoint: 100,
